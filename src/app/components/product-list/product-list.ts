@@ -7,7 +7,7 @@ import { Product } from '../../common/product';
 @Component({
   selector: 'app-product-list',
   imports: [NgForOf, CurrencyPipe ],
-  templateUrl: './product-list-table.html',
+  templateUrl: './product-list-grid.html',
   // templateUrl: './product-list.html',
   styleUrl: './product-list.css'
 })
