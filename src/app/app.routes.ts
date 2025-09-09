@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './services/product';
 
 export const routes: Routes = [
-    {path: 'category/:id', component: ProductList},
+    {path: 'category/:id/:name', component: ProductList},
     {path: 'category', component: ProductList},
     {path: 'products', component: ProductList},
     {path: '', redirectTo: '/products', pathMatch: 'full'},
@@ -15,13 +15,8 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-    // declarations: [App, ProductList],
     imports: [
         RouterModule.forRoot(routes)
-    ],
-    providers: [
-        ProductService
-    ],
-    // bootstrap: [App]
+    ]
 }) 
 export class AppRouter {}
