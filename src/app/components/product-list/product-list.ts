@@ -15,11 +15,11 @@ import { ActivatedRoute } from '@angular/router';
 export class ProductList implements OnInit{
 
   products: Product[] = [];
-  currentCategoryId: number = 1;
+  currentCategoryId: number = 2;
 
   constructor(private productService: ProductService, private route: ActivatedRoute) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.route.paramMap.subscribe(() => {
       this.listProducts();
     });
@@ -33,7 +33,8 @@ export class ProductList implements OnInit{
     if(hasCategoryId) {
       //get 'id' param string and convert to number using '+'
       this.currentCategoryId = +this.route.snapshot.paramMap.get('id')!;
-    }else{
+    }
+    else{
       //no category id ... default to 1
       this.currentCategoryId = 1;
     }
