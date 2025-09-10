@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
-// import { ProductList } from "./components/product-list/product-list";
+// useless import { ProductList } from "./components/product-list/product-list";
 import {  HttpClientModule } from '@angular/common/http';
 import { ProductService } from './services/product';
 import { ProductCategoryMenu } from "./components/product-category-menu/product-category-menu";
