@@ -1,6 +1,7 @@
 # AngularEcommerce
 
 This project has been discontinued and will be continued on ecommerce_app_V2[https://github.com/Navaneet09/ecommerce_app_V2]
+
 Thanks !
 
 ## Development server
